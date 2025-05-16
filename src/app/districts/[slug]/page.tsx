@@ -1,12 +1,5 @@
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
 
-export default async function DetailPage({ params }: PageProps) {
-    const { slug } = await params;
-    // console.log(params)
-
-    return <div>{ slug}</div>;
+export default async function DetailPage({ params }) {
+  const { slug } = await params; // ✅ Đúng cách
+  return <div>{slug}</div>;
 }
