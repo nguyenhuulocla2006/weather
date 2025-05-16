@@ -1,5 +1,5 @@
+export default async function DetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
-export default async function DetailPage({ params }) {
-  const { slug } = await params; // ✅ Đúng cách
   return <div>{slug}</div>;
 }
